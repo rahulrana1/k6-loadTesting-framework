@@ -1,0 +1,11 @@
+FROM loadimpact/k6:latest AS k6official
+
+FROM node:14.1.0
+COPY --from=k6official /usr/bin/k6 /usr/bin/k6
+
+WORKDIR /app
+
+COPY package.json .
+RUN npm i
+
+COPY . .

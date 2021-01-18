@@ -1,0 +1,24 @@
+{
+  "name": "k6-loadtesting",
+  "version": "1.0.0",
+  "description": "nimbus automated load testing using K6",
+  "main": "index.js",
+  "scripts": {
+    "login": "node -r esm postman/scripts/login.js"
+  },
+  "author": "Rahul Rana",
+  "license": "ISC",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "k6": "0.0.0",
+    "moment": "^2.24.0",
+    "newman": "^5.2.0",
+    "newman-reporter-htmlextra": "^1.19.4"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "expect.js": "0.3.1",
+    "path": "0.12.7",
+    "postman-to-k6": "^1.1.0"
+  }
+}
